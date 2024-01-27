@@ -21,5 +21,5 @@ provider "aws" {
   shared_credentials_files = ["$HOME/.aws/credentials"]
   profile                  = "kst-dev"
   #alias                   = "kst-dev"
-  region                   = "ap-southeast-1"
+  region                   = "var.aws_region_kst"
 }

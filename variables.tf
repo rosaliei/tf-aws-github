@@ -9,3 +9,9 @@ variable "backend_dynamodb_table_name_kst" {
   type        = string
   default     = "aws-dynamodb-backend-tfstate"
 }
+
+variable "aws_region_kst" {
+  description = "AWS REGION"
+  type        = string
+  default     = "ap-southeast-1"
+}
