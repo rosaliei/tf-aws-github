@@ -1,0 +1,15 @@
+### NOTE --> ###
+ssh-keygen -t rsa -b 4096 -f ./github.com.rosaliei
+--> adding key to github
+
+### AWS Account Acccess Test ###
+aws iam list-users --profile=kst-dev
+
+# working with github.com.rosaliei
+eval "$(ssh-agent -s)"
+ssh-add $HOME/github.com.rosaliei 
+ssh -T git@github.com
+
+# goto repo you want to work with
+git config user.name "bca-github-teting"
+git config user.email "kyawsithu1996@outlook.com"
